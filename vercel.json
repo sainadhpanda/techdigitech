@@ -5,12 +5,8 @@
   "framework": "vite",
   "outputDirectory": "artifacts/techdigiedu/dist/public",
   "env": {
-    "PORT": {
-      "default": "3000"
-    },
-    "BASE_PATH": {
-      "default": "/"
-    }
+    "PORT": "3000",
+    "BASE_PATH": "/"
   },
   "regions": ["iad1"],
   "git": {
