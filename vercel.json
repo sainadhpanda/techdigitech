@@ -1,13 +1,4 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "artifacts/techdigiedu/package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "dist/public" }
-    }
-  ],
-  "installCommand": "corepack enable && corepack prepare pnpm@latest --activate && pnpm install",
   "buildCommand": "pnpm -C artifacts/techdigiedu run build",
   "devCommand": "pnpm -C artifacts/techdigiedu run dev",
   "framework": "vite",
