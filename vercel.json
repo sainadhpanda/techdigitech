@@ -1,9 +1,16 @@
 {
-  "buildCommand": "pnpm run build",
-  "devCommand": "pnpm run dev",
-  "installCommand": "pnpm install",
+  "version": 2,
+  "builds": [
+    {
+      "src": "artifacts/techdigiedu/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist/public" }
+    }
+  ],
+  "installCommand": "pnpm -w install",
+  "buildCommand": "pnpm -w --filter ./artifacts/techdigiedu... run build",
+  "devCommand": "pnpm -C artifacts/techdigiedu run dev",
   "framework": "vite",
-  "outputDirectory": "artifacts/techdigiedu/dist/public",
   "env": {
     "PORT": "3000",
     "BASE_PATH": "/"
