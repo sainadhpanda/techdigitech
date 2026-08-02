@@ -7,7 +7,7 @@
       "config": { "distDir": "dist/public" }
     }
   ],
-  "installCommand": "corepack enable && corepack prepare pnpm@9 --activate && pnpm -w install --no-frozen-lockfile",
+  "installCommand": "corepack enable && corepack prepare pnpm@latest --activate && pnpm install",
   "buildCommand": "pnpm -C artifacts/techdigiedu run build",
   "devCommand": "pnpm -C artifacts/techdigiedu run dev",
   "framework": "vite",
