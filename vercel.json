@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "installCommand": "corepack enable && pnpm install --frozen-lockfile",
+  "installCommand": "corepack enable && pnpm install --no-frozen-lockfile",
   "buildCommand": "pnpm -C artifacts/techdigiedu run build",
   "outputDirectory": "artifacts/techdigiedu/dist/public",
   "env": {
