@@ -1,13 +1,12 @@
 {
+  "version": 2,
+  "installCommand": "corepack enable && pnpm install --frozen-lockfile",
   "buildCommand": "pnpm -C artifacts/techdigiedu run build",
-  "devCommand": "pnpm -C artifacts/techdigiedu run dev",
-  "framework": "vite",
+  "outputDirectory": "artifacts/techdigiedu/dist/public",
   "env": {
     "PORT": "3000",
-    "BASE_PATH": "/"
+    "BASE_PATH": "/",
+    "NODE_ENV": "production"
   },
-  "regions": ["iad1"],
-  "git": {
-    "deploymentEnabled": true
-  }
+  "regions": ["iad1"]
 }
