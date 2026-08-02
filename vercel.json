@@ -1,0 +1,19 @@
+{
+  "buildCommand": "pnpm run build",
+  "devCommand": "pnpm run dev",
+  "installCommand": "pnpm install",
+  "framework": "vite",
+  "outputDirectory": "./artifacts/techdigiedu/dist/public",
+  "env": {
+    "PORT": {
+      "default": "3000"
+    },
+    "BASE_PATH": {
+      "default": "/"
+    }
+  },
+  "regions": ["iad1"],
+  "git": {
+    "deploymentEnabled": true
+  }
+}
